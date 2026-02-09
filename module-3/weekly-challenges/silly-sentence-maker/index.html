@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Silly Sentence Maker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <header>
+        <h1>Silly Sentence Maker</h1>
+        <p>Give me a few words and I’ll turn them into something ridiculous.</p>
+      </header>
+
+      <section class="card">
+        <form id="sentenceForm">
+          <label>
+            Adjective
+            <input id="adjective" name="adjective" type="text" placeholder="e.g., sparkly" required />
+          </label>
+
+          <label>
+            Noun
+            <input id="noun" name="noun" type="text" placeholder="e.g., potato" required />
+          </label>
+
+          <label>
+            Verb
+            <input id="verb" name="verb" type="text" placeholder="e.g., dances" required />
+          </label>
+
+          <button type="submit">Make my sentence</button>
+        </form>
+
+        <div class="result" aria-live="polite">
+          <h2>Your sentence</h2>
+          <p id="output">Fill in the words and hit the button 🙂</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
